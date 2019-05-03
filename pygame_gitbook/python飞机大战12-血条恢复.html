@@ -1,0 +1,832 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>python飞机大战12-血条恢复 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="python飞机大战13-子弹增强.html" />
+    
+    
+    <link rel="prev" href="python飞机大战11-玩家多条命.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Pygame第1-1课：入门.html">
+            
+                <a href="Pygame第1-1课：入门.html">
+            
+                    
+                    Pygame第1-1课：入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Pygame第1-2课：使用精灵.html">
+            
+                <a href="Pygame第1-2课：使用精灵.html">
+            
+                    
+                    Pygame第1-2课：使用精灵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Pygame第1-3课：图片精灵.html">
+            
+                <a href="Pygame第1-3课：图片精灵.html">
+            
+                    
+                    Pygame第1-3课：图片精灵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="python飞机大战1-控制飞机.html">
+            
+                <a href="python飞机大战1-控制飞机.html">
+            
+                    
+                    python飞机大战1-控制飞机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="python飞机大战10-爆炸效果.html">
+            
+                <a href="python飞机大战10-爆炸效果.html">
+            
+                    
+                    python飞机大战10-爆炸效果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="python飞机大战11-玩家多条命.html">
+            
+                <a href="python飞机大战11-玩家多条命.html">
+            
+                    
+                    python飞机大战11-玩家多条命
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="python飞机大战12-血条恢复.html">
+            
+                <a href="python飞机大战12-血条恢复.html">
+            
+                    
+                    python飞机大战12-血条恢复
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="python飞机大战13-子弹增强.html">
+            
+                <a href="python飞机大战13-子弹增强.html">
+            
+                    
+                    python飞机大战13-子弹增强
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="python飞机大战14-游戏结束.html">
+            
+                <a href="python飞机大战14-游戏结束.html">
+            
+                    
+                    python飞机大战14-游戏结束
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="python飞机大战2-敌人精灵.html">
+            
+                <a href="python飞机大战2-敌人精灵.html">
+            
+                    
+                    python飞机大战2-敌人精灵
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="python飞机大战3-碰撞检测.html">
+            
+                <a href="python飞机大战3-碰撞检测.html">
+            
+                    
+                    python飞机大战3-碰撞检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="python飞机大战4-添加图形.html">
+            
+                <a href="python飞机大战4-添加图形.html">
+            
+                    
+                    python飞机大战4-添加图形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="python飞机大战5-改进的碰撞.html">
+            
+                <a href="python飞机大战5-改进的碰撞.html">
+            
+                    
+                    python飞机大战5-改进的碰撞
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="python飞机大战6-精灵动画.html">
+            
+                <a href="python飞机大战6-精灵动画.html">
+            
+                    
+                    python飞机大战6-精灵动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="python飞机大战7-得分与绘制文本.html">
+            
+                <a href="python飞机大战7-得分与绘制文本.html">
+            
+                    
+                    python飞机大战7-得分与绘制文本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="python飞机大战8-声音和音乐.html">
+            
+                <a href="python飞机大战8-声音和音乐.html">
+            
+                    
+                    python飞机大战8-声音和音乐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="python飞机大战9-玩家飞机添加血条.html">
+            
+                <a href="python飞机大战9-玩家飞机添加血条.html">
+            
+                    
+                    python飞机大战9-玩家飞机添加血条
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >python飞机大战12-血条恢复</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x8BA9;&#x6211;&#x4EEC;&#x7684;&#x73A9;&#x5BB6;&#x53D8;&#x5F97;&#x66F4;&#x5F3A;&#xFF0C;&#x589E;&#x52A0;2&#x79CD;&#x9053;&#x5177;&#xFF1A;</p>
+<ul>
+<li>&#x76FE;&#x724C; - &#x4E00;&#x79CD;&#x80FD;&#x591F;&#x6062;&#x590D;&#x8840;&#x6761;&#x7684;&#x7269;&#x4F53;</li>
+<li>&#x67AA; - &#x4E00;&#x4E2A;&#x4F1A;&#x589E;&#x52A0;&#x706B;&#x529B;&#x7684;&#x7269;&#x4F53;</li>
+</ul>
+<p><a href="http://kidscancode.org/blog/img/bolt_gold.png" target="_blank"><img src="http://upload-images.jianshu.io/upload_images/468490-b204acf41cb04224.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></a> <a href="http://kidscancode.org/blog/img/shield_gold.png" target="_blank"><img src="http://upload-images.jianshu.io/upload_images/468490-2815d3c539184f2e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></a> </p>
+<h3 id="pow&#x7CBE;&#x7075;">Pow&#x7CBE;&#x7075;</h3>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x53E6;&#x4E00;&#x4E2A;Sprite&#xFF0C;&#x8FD9;&#x6B21;&#x4EE3;&#x8868;&#x6211;&#x4EEC;&#x7684;powerup&#xFF08;&#x529B;&#x91CF;&#x52A0;&#x5F3A;&#xFF09;&#x5BF9;&#x8C61;&#x3002;&#x4E3A;&#x4E86;&#x7B80;&#x5355;&#x8D77;&#x89C1;&#xFF0C;&#x53EF;&#x4EE5;&#x590D;&#x5236;<code>Bullet()</code>&#x7684;&#x7C7B;&#x578B;&#x5B9A;&#x4E49;&#xFF0C;&#x7136;&#x540E;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x66F4;&#x6539;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x884C;&#x4E3A;&#x7C7B;&#x4F3C;&#xFF1A;&#x5BF9;&#x4E8E;&#x5B83;&#x7684;&#x56FE;&#x7247;&#x5F62;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x968F;&#x673A;&#x9009;&#x62E9;<code>&apos;gun&apos;</code>&#x548C;&#x4E4B;&#x95F4;<code>&apos;shield&apos;</code>&#xFF0C;&#x8FD9;&#x5C06;&#x662F;&#x6211;&#x4EEC;&#x7684;&#x4E24;&#x79CD;&#x529B;&#x91CF;&#x52A0;&#x5F3A;&#x3002;</p>
+<pre><code>class Pow(pygame.sprite.Sprite):
+    def __init__(self, center):
+        pygame.sprite.Sprite.__init__(self)
+        self.type = random.choice([&apos;shield&apos;, &apos;gun&apos;])
+        self.image = powerup_images[self.type]
+        self.image.set_colorkey(BLACK)
+        self.rect = self.image.get_rect()
+        self.rect.center = center
+        self.speedy = 2
+
+    def update(self):
+        self.rect.y += self.speedy
+        # kill if it moves off the bottom of the screen
+        if self.rect.top &gt; HEIGHT:
+            self.kill()
+</code></pre><p>&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x90E8;&#x5206;&#x52A0;&#x8F7D;&#x65B0;&#x56FE;&#x50CF;&#xFF0C;&#x4F7F;&#x7528;&#x5B57;&#x5178;&#x6765;&#x4FDD;&#x5B58;&#x56FE;&#x50CF;&#xFF1A;</p>
+<pre><code>powerup_images = {}
+powerup_images[&apos;shield&apos;] = pygame.image.load(path.join(img_dir, &apos;shield_gold.png&apos;)).convert()
+powerup_images[&apos;gun&apos;] = pygame.image.load(path.join(img_dir, &apos;bolt_gold.png&apos;)).convert()
+</code></pre><h3 id="&#x751F;&#x4EA7;&#x9053;&#x5177;">&#x751F;&#x4EA7;&#x9053;&#x5177;</h3>
+<p>&#x4E3A;&#x4E86;&#x4EA7;&#x751F;&#x5B83;&#x4EEC;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7EC4;&#x6765;&#x4FDD;&#x5B58;&#x5B83;&#x4EEC;&#xFF08;&#x7528;&#x4E8E;&#x78B0;&#x649E;&#xFF09;&#xFF1A;</p>
+<pre><code>powerups = pygame.sprite.Group()
+</code></pre><p>&#x7136;&#x540E;&#xFF0C;&#x5F53;&#x5B50;&#x5F39;&#x6467;&#x6BC1;&#x4E00;&#x4E2A;&#x602A;&#x7269;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x4E00;&#x4E2A;&#xFF08;&#x5C0F;&#xFF09;&#x968F;&#x673A;&#x7684;&#x673A;&#x4F1A;&#xFF0C;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x529B;&#x91CF;&#x52A0;&#x5F3A;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code># check to see if a bullet hit a mob
+hits = pygame.sprite.groupcollide(mobs, bullets, True, True)
+for hit in hits:
+    score += 50 - hit.radius
+    random.choice(expl_sounds).play()
+    expl = Explosion(hit.rect.center, &apos;lg&apos;)
+    all_sprites.add(expl)
+    if random.random() &gt; 0.9:
+        pow = Pow(hit.rect.center)
+        all_sprites.add(pow)
+        powerups.add(pow)
+    newmob()
+</code></pre><p>&#x5728;&#x8FD9;&#x91CC;&#xFF0C;<code>random.random()</code>&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x4ECB;&#x4E8E;0&#x548C;1&#x4E4B;&#x95F4;&#x7684;&#x968F;&#x673A;&#x5341;&#x8FDB;&#x5236;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x53EA;&#x6709;&#x5F53;&#x6570;&#x5B57;&#x5927;&#x4E8E;0.9&#x65F6;&#x624D;&#x4EA7;&#x751F;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x6709;10&#xFF05;&#x7684;&#x51E0;&#x7387;&#x4ECE;&#x88AB;&#x6BC1;&#x574F;&#x7684;&#x6D41;&#x661F;&#x4E0A;&#x6389;&#x4E0B;&#x5956;&#x52B1;&#x3002;</p>
+<h3 id="&#x4E0E;&#x73A9;&#x5BB6;&#x78B0;&#x649E;">&#x4E0E;&#x73A9;&#x5BB6;&#x78B0;&#x649E;</h3>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x53E6;&#x4E00;&#x6B21;&#x78B0;&#x649E;&#x68C0;&#x67E5;&#xFF0C;&#x8FD9;&#x6B21;&#x662F;&#x5728;&#x73A9;&#x5BB6;&#x548C;&#x9053;&#x5177;&#x7EC4;&#x4E4B;&#x95F4;&#x3002;</p>
+<pre><code># check to see if player hit a powerup
+hits = pygame.sprite.spritecollide(player, powerups, True)
+for hit in hits:
+    if hit.type == &apos;shield&apos;:
+        player.shield += random.randrange(10, 30)
+        if player.shield &gt;= 100:
+            player.shield = 100
+    if hit.type == &apos;gun&apos;:
+        pass
+</code></pre><h3 id="&#x6574;&#x5408;&#x5728;&#x4E00;&#x8D77;">&#x6574;&#x5408;&#x5728;&#x4E00;&#x8D77;</h3>
+<pre><code>import pygame
+import random
+from os import path
+
+img_dir = path.join(path.dirname(__file__), &apos;img&apos;)
+snd_dir = path.join(path.dirname(__file__), &apos;snd&apos;)
+
+WIDTH = 480
+HEIGHT = 600
+FPS = 60
+
+# define colors
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+
+# initialize pygame and create window
+pygame.init()
+pygame.mixer.init()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption(&quot;Shmup!&quot;)
+clock = pygame.time.Clock()
+
+font_name = pygame.font.match_font(&apos;arial&apos;)
+def draw_text(surf, text, size, x, y):
+    font = pygame.font.Font(font_name, size)
+    text_surface = font.render(text, True, WHITE)
+    text_rect = text_surface.get_rect()
+    text_rect.midtop = (x, y)
+    surf.blit(text_surface, text_rect)
+
+def newmob():
+    m = Mob()
+    all_sprites.add(m)
+    mobs.add(m)
+
+def draw_shield_bar(surf, x, y, pct):
+    if pct &lt; 0:
+        pct = 0
+    BAR_LENGTH = 100
+    BAR_HEIGHT = 10
+    fill = (pct / 100) * BAR_LENGTH
+    outline_rect = pygame.Rect(x, y, BAR_LENGTH, BAR_HEIGHT)
+    fill_rect = pygame.Rect(x, y, fill, BAR_HEIGHT)
+    pygame.draw.rect(surf, GREEN, fill_rect)
+    pygame.draw.rect(surf, WHITE, outline_rect, 2)
+
+def draw_lives(surf, x, y, lives, img):
+    for i in range(lives):
+        img_rect = img.get_rect()
+        img_rect.x = x + 30 * i
+        img_rect.y = y
+        surf.blit(img, img_rect)
+
+class Player(pygame.sprite.Sprite):
+    def __init__(self):
+        pygame.sprite.Sprite.__init__(self)
+        self.image = pygame.transform.scale(player_img, (50, 38))
+        self.image.set_colorkey(BLACK)
+        self.rect = self.image.get_rect()
+        self.radius = 20
+        # pygame.draw.circle(self.image, RED, self.rect.center, self.radius)
+        self.rect.centerx = WIDTH / 2
+        self.rect.bottom = HEIGHT - 10
+        self.speedx = 0
+        self.shield = 100
+        self.shoot_delay = 250
+        self.last_shot = pygame.time.get_ticks()
+        self.lives = 3
+        self.hidden = False
+        self.hide_timer = pygame.time.get_ticks()
+
+    def update(self):
+        # unhide if hidden
+        if self.hidden and pygame.time.get_ticks() - self.hide_timer &gt; 1000:
+            self.hidden = False
+            self.rect.centerx = WIDTH / 2
+            self.rect.bottom = HEIGHT - 10
+
+        self.speedx = 0
+        keystate = pygame.key.get_pressed()
+        if keystate[pygame.K_LEFT]:
+            self.speedx = -8
+        if keystate[pygame.K_RIGHT]:
+            self.speedx = 8
+        if keystate[pygame.K_SPACE]:
+            self.shoot()
+        self.rect.x += self.speedx
+        if self.rect.right &gt; WIDTH:
+            self.rect.right = WIDTH
+        if self.rect.left &lt; 0:
+            self.rect.left = 0
+
+    def shoot(self):
+        now = pygame.time.get_ticks()
+        if now - self.last_shot &gt; self.shoot_delay:
+            self.last_shot = now
+            bullet = Bullet(self.rect.centerx, self.rect.top)
+            all_sprites.add(bullet)
+            bullets.add(bullet)
+            shoot_sound.play()
+
+    def hide(self):
+        # hide the player temporarily
+        self.hidden = True
+        self.hide_timer = pygame.time.get_ticks()
+        self.rect.center = (WIDTH / 2, HEIGHT + 200)
+
+class Mob(pygame.sprite.Sprite):
+    def __init__(self):
+        pygame.sprite.Sprite.__init__(self)
+        self.image_orig = random.choice(meteor_images)
+        self.image_orig.set_colorkey(BLACK)
+        self.image = self.image_orig.copy()
+        self.rect = self.image.get_rect()
+        self.radius = int(self.rect.width * .85 / 2)
+        # pygame.draw.circle(self.image, RED, self.rect.center, self.radius)
+        self.rect.x = random.randrange(WIDTH - self.rect.width)
+        self.rect.bottom = random.randrange(-80, -20)
+        self.speedy = random.randrange(1, 8)
+        self.speedx = random.randrange(-3, 3)
+        self.rot = 0
+        self.rot_speed = random.randrange(-8, 8)
+        self.last_update = pygame.time.get_ticks()
+
+    def rotate(self):
+        now = pygame.time.get_ticks()
+        if now - self.last_update &gt; 50:
+            self.last_update = now
+            self.rot = (self.rot + self.rot_speed) % 360
+            new_image = pygame.transform.rotate(self.image_orig, self.rot)
+            old_center = self.rect.center
+            self.image = new_image
+            self.rect = self.image.get_rect()
+            self.rect.center = old_center
+
+    def update(self):
+        self.rotate()
+        self.rect.x += self.speedx
+        self.rect.y += self.speedy
+        if self.rect.top &gt; HEIGHT + 10 or self.rect.left &lt; -100 or self.rect.right &gt; WIDTH + 100:
+            self.rect.x = random.randrange(WIDTH - self.rect.width)
+            self.rect.y = random.randrange(-100, -40)
+            self.speedy = random.randrange(1, 8)
+
+class Bullet(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        pygame.sprite.Sprite.__init__(self)
+        self.image = bullet_img
+        self.image.set_colorkey(BLACK)
+        self.rect = self.image.get_rect()
+        self.rect.bottom = y
+        self.rect.centerx = x
+        self.speedy = -10
+
+    def update(self):
+        self.rect.y += self.speedy
+        # kill if it moves off the top of the screen
+        if self.rect.bottom &lt; 0:
+            self.kill()
+
+class Pow(pygame.sprite.Sprite):
+    def __init__(self, center):
+        pygame.sprite.Sprite.__init__(self)
+        self.type = random.choice([&apos;shield&apos;, &apos;gun&apos;])
+        self.image = powerup_images[self.type]
+        self.image.set_colorkey(BLACK)
+        self.rect = self.image.get_rect()
+        self.rect.center = center
+        self.speedy = 2
+
+    def update(self):
+        self.rect.y += self.speedy
+        # kill if it moves off the top of the screen
+        if self.rect.top &gt; HEIGHT:
+            self.kill()
+
+class Explosion(pygame.sprite.Sprite):
+    def __init__(self, center, size):
+        pygame.sprite.Sprite.__init__(self)
+        self.size = size
+        self.image = explosion_anim[self.size][0]
+        self.rect = self.image.get_rect()
+        self.rect.center = center
+        self.frame = 0
+        self.last_update = pygame.time.get_ticks()
+        self.frame_rate = 75
+
+    def update(self):
+        now = pygame.time.get_ticks()
+        if now - self.last_update &gt; self.frame_rate:
+            self.last_update = now
+            self.frame += 1
+            if self.frame == len(explosion_anim[self.size]):
+                self.kill()
+            else:
+                center = self.rect.center
+                self.image = explosion_anim[self.size][self.frame]
+                self.rect = self.image.get_rect()
+                self.rect.center = center
+
+# Load all game graphics
+background = pygame.image.load(path.join(img_dir, &quot;starfield.png&quot;)).convert()
+background_rect = background.get_rect()
+player_img = pygame.image.load(path.join(img_dir, &quot;playerShip1_orange.png&quot;)).convert()
+player_mini_img = pygame.transform.scale(player_img, (25, 19))
+player_mini_img.set_colorkey(BLACK)
+bullet_img = pygame.image.load(path.join(img_dir, &quot;laserRed16.png&quot;)).convert()
+meteor_images = []
+meteor_list = [&apos;meteorBrown_big1.png&apos;, &apos;meteorBrown_med1.png&apos;, &apos;meteorBrown_med1.png&apos;,
+               &apos;meteorBrown_med3.png&apos;, &apos;meteorBrown_small1.png&apos;, &apos;meteorBrown_small2.png&apos;,
+               &apos;meteorBrown_tiny1.png&apos;]
+for img in meteor_list:
+    meteor_images.append(pygame.image.load(path.join(img_dir, img)).convert())
+explosion_anim = {}
+explosion_anim[&apos;lg&apos;] = []
+explosion_anim[&apos;sm&apos;] = []
+explosion_anim[&apos;player&apos;] = []
+for i in range(9):
+    filename = &apos;regularExplosion0{}.png&apos;.format(i)
+    img = pygame.image.load(path.join(img_dir, filename)).convert()
+    img.set_colorkey(BLACK)
+    img_lg = pygame.transform.scale(img, (75, 75))
+    explosion_anim[&apos;lg&apos;].append(img_lg)
+    img_sm = pygame.transform.scale(img, (32, 32))
+    explosion_anim[&apos;sm&apos;].append(img_sm)
+    filename = &apos;sonicExplosion0{}.png&apos;.format(i)
+    img = pygame.image.load(path.join(img_dir, filename)).convert()
+    img.set_colorkey(BLACK)
+    explosion_anim[&apos;player&apos;].append(img)
+powerup_images = {}
+powerup_images[&apos;shield&apos;] = pygame.image.load(path.join(img_dir, &apos;shield_gold.png&apos;)).convert()
+powerup_images[&apos;gun&apos;] = pygame.image.load(path.join(img_dir, &apos;bolt_gold.png&apos;)).convert()
+
+
+# Load all game sounds
+shoot_sound = pygame.mixer.Sound(path.join(snd_dir, &apos;pew.wav&apos;))
+expl_sounds = []
+for snd in [&apos;expl3.wav&apos;, &apos;expl6.wav&apos;]:
+    expl_sounds.append(pygame.mixer.Sound(path.join(snd_dir, snd)))
+player_die_sound = pygame.mixer.Sound(path.join(snd_dir, &apos;rumble1.ogg&apos;))
+pygame.mixer.music.load(path.join(snd_dir, &apos;tgfcoder-FrozenJam-SeamlessLoop.ogg&apos;))
+pygame.mixer.music.set_volume(0.4)
+
+all_sprites = pygame.sprite.Group()
+mobs = pygame.sprite.Group()
+bullets = pygame.sprite.Group()
+powerups = pygame.sprite.Group()
+player = Player()
+all_sprites.add(player)
+for i in range(8):
+    newmob()
+
+score = 0
+pygame.mixer.music.play(loops=-1)
+# Game loop
+running = True
+while running:
+    # keep loop running at the right speed
+    clock.tick(FPS)
+    # Process input (events)
+    for event in pygame.event.get():
+        # check for closing window
+        if event.type == pygame.QUIT:
+            running = False
+
+    # Update
+    all_sprites.update()
+
+    # check to see if a bullet hit a mob
+    hits = pygame.sprite.groupcollide(mobs, bullets, True, True)
+    for hit in hits:
+        score += 50 - hit.radius
+        random.choice(expl_sounds).play()
+        expl = Explosion(hit.rect.center, &apos;lg&apos;)
+        all_sprites.add(expl)
+        if random.random() &gt; 0.9:
+            pow = Pow(hit.rect.center)
+            all_sprites.add(pow)
+            powerups.add(pow)
+        newmob()
+
+    # check to see if a mob hit the player
+    hits = pygame.sprite.spritecollide(player, mobs, True, pygame.sprite.collide_circle)
+    for hit in hits:
+        player.shield -= hit.radius * 2
+        expl = Explosion(hit.rect.center, &apos;sm&apos;)
+        all_sprites.add(expl)
+        newmob()
+        if player.shield &lt;= 0:
+            player_die_sound.play()
+            death_explosion = Explosion(player.rect.center, &apos;player&apos;)
+            all_sprites.add(death_explosion)
+            player.hide()
+            player.lives -= 1
+            player.shield = 100
+
+    # check to see if player hit a powerup
+    hits = pygame.sprite.spritecollide(player, powerups, True)
+    for hit in hits:
+        if hit.type == &apos;shield&apos;:
+            player.shield += random.randrange(10, 30)
+            if player.shield &gt;= 100:
+                player.shield = 100
+        if hit.type == &apos;gun&apos;:
+            pass
+
+    # if the player died and the explosion has finished playing
+    if player.lives == 0 and not death_explosion.alive():
+        running = False
+
+    # Draw / render
+    screen.fill(BLACK)
+    screen.blit(background, background_rect)
+    all_sprites.draw(screen)
+    draw_text(screen, str(score), 18, WIDTH / 2, 10)
+    draw_shield_bar(screen, 5, 5, player.shield)
+    draw_lives(screen, WIDTH - 100, 5, player.lives, player_mini_img)
+    # *after* drawing everything, flip the display
+    pygame.display.flip()
+
+pygame.quit()
+</code></pre><p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x6B63;&#x5728;&#x5904;&#x7406;&#x76FE;&#x724C;&#x52A0;&#x7535;&#xFF0C;&#x8FD9;&#x4F1A;&#x7ED9;&#x73A9;&#x5BB6;&#x4E00;&#x4E2A;&#x968F;&#x673A;&#x6570;&#x91CF;&#x7684;&#x76FE;&#x724C;&#x3002;&#x5728;<code>&apos;gun&apos;</code>&#x4E0A;&#x7535;&#x662F;&#x4E00;&#x4E2A;<em>&#x7A0D;&#x5FAE;</em>&#x591A;&#x4E00;&#x70B9;&#x53C2;&#x4E0E;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4F1A;&#x7167;&#x987E;&#x7684;&#xFF0C;&#x5728;&#x672A;&#x6765;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="python飞机大战11-玩家多条命.html" class="navigation navigation-prev " aria-label="Previous page: python飞机大战11-玩家多条命">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="python飞机大战13-子弹增强.html" class="navigation navigation-next " aria-label="Next page: python飞机大战13-子弹增强">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"python飞机大战12-血条恢复","level":"1.8","depth":1,"next":{"title":"python飞机大战13-子弹增强","level":"1.9","depth":1,"path":"python飞机大战13-子弹增强.md","ref":"python飞机大战13-子弹增强.md","articles":[]},"previous":{"title":"python飞机大战11-玩家多条命","level":"1.7","depth":1,"path":"python飞机大战11-玩家多条命.md","ref":"python飞机大战11-玩家多条命.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"python飞机大战12-血条恢复.md","mtime":"2019-05-03T03:28:42.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-03T05:59:38.618Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
